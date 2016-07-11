@@ -1,0 +1,37 @@
+** Solving sudoku **
+
+Fill number:
+1. block only have 1 cell missing
+2. line only have 1 cell missing
+3. Crosshatching: only cell in box can fill in the number
+ - all other cells were excluded by the lines it stays
+4. only cell on line can fill in the number
+ - all other cells were excluded by the box it stays
+
+Predict number:
+1. The number can only stay on certain line of the box
+
+There are 3 dimensions
+1. row/col
+2. boxes
+3. number, 1 to 9
+
+---
+Data Structure:
+1. Fill 9 numbers in each of the cells, and eliminate them 1 after 1
+ - initialize
+2. Can get where the number is in the boxes by row/column
+ - b[0][0].getRow(n)
+3. Can update the number
+ - b[0][0].set(x, y, n)
+4. Can update box when something get updated
+ - b[0][0].updateClaimedRow(y, n)
+ - b[0][0].updateClaimedCol(x, n)
+5. Check conflicts (shouldn't happen)
+6. Check finished
+cells[3][3][9]
+certainty
+
+---
+Algorithm
+1. Initialize all boxes

@@ -1,0 +1,7 @@
+Source: Leetcode 367
+Binary search
+TODO: what is the reasonable upper bond
+
+Alternative solution:
+Square number = 1 + 3 + 5 + ...
+sum(map(2k+1, k in range(?)))
