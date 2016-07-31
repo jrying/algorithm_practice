@@ -1,0 +1,14 @@
+http://pages.cs.wisc.edu/~vernon/cs367/notes/11.PRIORITY-Q.html
+
+Python
+https://docs.python.org/2/library/heapq.html
+https://rockie-yang.gitbooks.io/python-cookbook/content/ch1/collection_heapq.html
+import heapq
+nums = [1, 8, 2, 23, 7, -4, 18, 23, 42, 37, 2]
+heapq.heapify(nums)
+heapq.heappop(nums)
+heapq.nlargest(3, nums)
+heapq.nsmallest(3, nums)
+heapq.heappush(reversed_nums, -num)
+
+Java

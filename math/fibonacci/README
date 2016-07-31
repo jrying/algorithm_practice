@@ -1,0 +1,23 @@
+Facts
+The sum of the first n Fibonacci numbers is the [(n + 2)nd Fibonacci number - 1] .
+http://www.maths.surrey.ac.uk/hosted-sites/R.Knott/Fibonacci/fibmaths.html#section1.1
+
+The sequence of final digits in Fibonacci numbers repeats in cycles of 60. The last two digits repeat in 300, the last three in 1500, the last four in 15000
+http://mathworld.wolfram.com/FibonacciNumber.html
+
+Calculate big Fibonacci O(logn):
+F(2n-1) =   F(n-1)^2    + F(n)^2   ===   a' = a^2 + b^2
+F(2n)   = 2 F(n-1) F(n) + F(n)^2   ===   b' = 2ab + b^2
+
+def f(n):
+    if n == 0: return 0
+    if n == 1: return 1
+    #2ab + b^2
+    if n % 2 == 0:
+        fn2 = f(n/2)
+        return 2*f(n/2-1) * fn2 + fn2**2
+    return f((n+1)/2)**2 + f((n-1)/2)**2
+
+Calculate sum of Fibonacci:
+sum(n) = f(n-2)
+sum(l,f) = f(l-2) - f(r-2)

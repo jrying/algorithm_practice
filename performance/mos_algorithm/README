@@ -1,0 +1,11 @@
+Limitation
+Offline
+
+On Array:
+https://blog.anudeep2011.com/mos-algorithm/
+O(n^2) -> O(n*sqrt(n))
+For L, (num of Query) * (size of block) = M*sqrt(N)
+For R, (num of block) * (length of array) = sqrt(N) * N
+
+On Tree:
+http://codeforces.com/blog/entry/43230
