@@ -1,0 +1,49 @@
+
+http://mathworld.wolfram.com/DiophantineEquation.html
+
+Non-negative
+http://cstheory.stackexchange.com/questions/19758/linear-diophantine-equation-in-non-negative-integers
+Method
+http://stackoverflow.com/questions/27458157/writing-a-program-that-checks-whether-a-linear-equation-has-positive-integer-sol
+
+Temp
+from fractions import gcd
+
+N, Q = map(int, raw_input().split())
+ships = sorted(map(int, raw_input().split()))
+b = 0
+min_gcd = 10**9+1
+lower_bond = 10**9+1
+too_big = N
+for s1 in range(N - 1):
+    for s2 in range(s1 + 1, too_big):
+        g = abs(gcd(ships[s1], ships[s2]))
+        if g == 1:
+            min_gcd = 1
+            lower_bond = min(lower_bond, (ships[s1] - 1) * (ships[s2] - 1))
+            too_big = s2
+            break
+        elif min_gcd > g:
+            g = 1
+            lower_bond = (ships[s1] - 1) * (ships[s2] - 1)
+
+p = [0] * (lower_bond/24 + 1)
+
+def ff(n):
+    return p[n/24] >> (n%24) & 1
+
+for i in xrange(1, lower_bond + 1):
+    for s in ships:
+        if i == s or (i-s > 0 and ff(i-s)):
+            p[i/24] |= 1 << (i%24)
+            break
+
+def f(n):
+    if n <= lower_bond: return ff(n)
+    elif n % min_gcd == 0: return True
+    return False
+
+
+for i in xrange(Q):
+    q = input()
+    print "YES" if f(q) else "NO"

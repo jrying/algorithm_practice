@@ -1,4 +1,5 @@
-
+# Source:
+# https://www.codechef.com/LTIME38/problems/LUMPYBUS
 def f():
     n, p, q = map(int, raw_input().split(" "))
     a = sorted(map(int, raw_input().split(" ")))

@@ -9,3 +9,5 @@ For R, (num of block) * (length of array) = sqrt(N) * N
 
 On Tree:
 http://codeforces.com/blog/entry/43230
+Subtree - dfs
+Path - modified dfs

@@ -1,3 +1,4 @@
+
 # TODO: TLE
 MAXX = 10**9+1
 N = input()
