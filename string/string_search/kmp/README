@@ -1,1 +1,4 @@
 https://en.wikipedia.org/wiki/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm
+
+1. Prepare partial match table T of W (keyword), where T[i] is the distance we should move back when we find a mismatch on i
+2. Loop over the string S, go back to previous matched prefix saved in T when mismatch happens

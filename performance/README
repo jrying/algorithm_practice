@@ -2,3 +2,6 @@ Binary search
 Pre-calculate
 Dynamic programming
 Mo's algorithm
+    Mo's algorithm on tree
+Hash: Instead of compare 2, compare the hash
+    Rational gambling/Double(Triple) hash: If the hash is not identical, use 2 different hashes and wish it works

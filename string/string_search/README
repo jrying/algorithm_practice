@@ -1,7 +1,8 @@
+
 Algorithm	Preprocessing time	Matching time[1]
 Naïve string search algorithm	0 (no preprocessing)	Θ(nm)
 Rabin–Karp string search algorithm	Θ(m)	average Θ(n + m),
-worst Θ((n−m)m)
+worst Θ((n−m)m)/O(nm)
 Finite-state automaton based search	Θ(mk)	Θ(n)
 Knuth–Morris–Pratt algorithm	Θ(m)	Θ(n)
 Boyer–Moore string search algorithm	Θ(m + k)	best Ω(n/m),
@@ -12,3 +13,6 @@ Two-way string-matching algorithm	Θ(m)	O(n+m)
 
 Topcoder on RK and KMP:
 https://www.topcoder.com/community/data-science/data-science-tutorials/introduction-to-string-searching-algorithms/
+
+
+In single pattern case, RK is inferior than KMP/BM because of it's worse case scenario

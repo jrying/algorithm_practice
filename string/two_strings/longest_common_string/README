@@ -1,0 +1,13 @@
+DP
+
+Suffix tree
+
+Hash + BS
+https://www.topcoder.com/community/data-science/data-science-tutorials/introduction-to-string-searching-algorithms/
+Choose a L and calculate hash of all the substrings of length L in a and b.
+If there are matches, go calculate the right part, else calculate the left part.
+Then will find the length of LCS
+Works for problem with > 2 strings
+O(nlogn)...?
+Rolling hash = n
+Bs = logn

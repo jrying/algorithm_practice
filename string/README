@@ -1,18 +1,33 @@
 Basic problem on strings:
 https://en.wikipedia.org/wiki/Category:Problems_on_strings
 
+Classical:
+String Search
+
 Single string:
-Longest alternating subsequence
+Longest alternating subsequence (Longest zig-zag subsequence)
 Longest increasing subsequence
 Longest palindromic substring
 Longest repeated substring problem
 Lexicographically minimal string rotation
 
 Two strings:
-Longest common substring problem
-Longest common subsequence problem
+v Longest common substring problem
+v Longest common subsequence problem
 Shortest common supersequence problem
-String-to-string correction problem (shortest edit distance)
+v String-to-string correction problem (shortest edit distance)
 
 Special:
 Separating words problem
+
+DS:
+Suffix Tree
+suffix array
+Trie
+
+Test:
+http://javarevisited.blogspot.co.uk/2015/01/top-20-string-coding-interview-question-programming-interview.html
+
+
+Alternatives:
+find shortest substring, such that the concatenation of one or more copies of it results in the original string
