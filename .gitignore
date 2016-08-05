@@ -1,3 +1,6 @@
 *.class
 *.pyc
+my_output*
+time.out
+test.sh
 temp/
