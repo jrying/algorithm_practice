@@ -1,0 +1,5 @@
+O(n^2)
+DP
+
+O(nlogn)
+http://www.geeksforgeeks.org/longest-monotonically-increasing-subsequence-size-n-log-n/

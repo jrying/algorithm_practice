@@ -5,17 +5,17 @@ Classical:
 String Search
 
 Single string:
-Longest alternating subsequence (Longest zig-zag subsequence)
 Longest increasing subsequence
+Longest alternating subsequence (Longest zig-zag subsequence)
 Longest palindromic substring
 Longest repeated substring problem
 Lexicographically minimal string rotation
 
 Two strings:
-v Longest common substring problem
-v Longest common subsequence problem
+Longest common substring problem
+Longest common subsequence problem
 Shortest common supersequence problem
-v String-to-string correction problem (shortest edit distance)
+String-to-string correction problem (shortest edit distance)
 
 Special:
 Separating words problem

@@ -1,5 +1,5 @@
 # Non-binary Tree
-N = 100
+N = 10000
 result = []
 result.append(str(N))
 result.append(" ".join(map(str, range(1, N+1))))
