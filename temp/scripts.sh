@@ -14,3 +14,8 @@ N = input()
  = map(int, raw_input().split(" "))
  = map(int, raw_input().split(" "))
  = map(int, raw_input().split(" "))
+
+
+
+print "\n".join(map(lambda x: str(int(random()*2**20)), range(1000)))
+print " ".join(map(lambda x: str(int(random()*2**20)), range(1000)))
