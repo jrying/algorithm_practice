@@ -14,5 +14,7 @@ Two-way string-matching algorithm	Θ(m)	O(n+m)
 Topcoder on RK and KMP:
 https://www.topcoder.com/community/data-science/data-science-tutorials/introduction-to-string-searching-algorithms/
 
+Hackerearth:
+https://www.hackerearth.com/notes/exact-string-matching-algorithms/
 
 In single pattern case, RK is inferior than KMP/BM because of it's worse case scenario

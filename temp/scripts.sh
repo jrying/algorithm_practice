@@ -19,3 +19,11 @@ N = input()
 
 print "\n".join(map(lambda x: str(int(random()*2**20)), range(1000)))
 print " ".join(map(lambda x: str(int(random()*2**20)), range(1000)))
+
+N = 3000
+result = []
+# result.append(" ".join(map(str, range(1, N+1))))
+for i in range(2, 30000+1):
+    result.append(str(i%N+1) +" " + str((N*N)%(i-1)%N+1))
+
+print "\n".join(result)
