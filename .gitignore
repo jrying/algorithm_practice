@@ -1,6 +1,6 @@
 *.class
 *.pyc
 my_output*
-time.out
+*.out*
 test.sh
 temp/
